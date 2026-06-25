@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skygrid Networks | Azure Cloud Security</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap');
+
+        :root {
+            --bg-color: #0a0a0a;
+            --surface-color: #141414;
+            --text-main: #f0f0f0;
+            --text-muted: #888888;
+            --azure-blue: #0078d4;
+            --accent-glow: rgba(0, 120, 212, 0.2);
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            padding: 40px 0;
+            border-bottom: 1px solid #222;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.2rem;
+            font-weight: 800;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        .logo span {
+            color: var(--azure-blue);
+        }
+
+        .hero {
+            padding: 100px 0 60px;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: 800;
+            margin-bottom: 20px;
+            line-height: 1.1;
+        }
+
+        .hero h1 span {
+            color: var(--azure-blue);
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: var(--text-muted);
+            max-width: 600px;
+            margin: 0 auto 40px;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: var(--azure-blue);
+            color: #fff;
+            padding: 15px 30px;
+            text-decoration: none;
+            font-weight: 600;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px var(--accent-glow);
+        }
+
+        .btn:hover {
+            background-color: #005a9e;
+            transform: translateY(-2px);
+        }
+
+        .btn-outline {
+            background-color: transparent;
+            border: 1px solid #333;
+            box-shadow: none;
+            margin-left: 15px;
+        }
+
+        .btn-outline:hover {
+            border-color: var(--azure-blue);
+            background-color: transparent;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            padding: 60px 0;
+        }
+
+        .feature-card {
+            background-color: var(--surface-color);
+            padding: 30px;
+            border-radius: 8px;
+            border: 1px solid #222;
+            transition: border-color 0.3s ease;
+        }
+
+        .feature-card:hover {
+            border-color: var(--azure-blue);
+        }
+
+        .feature-card h3 {
+            margin-top: 0;
+            font-size: 1.2rem;
+            color: #fff;
+        }
+
+        .feature-card p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            margin-bottom: 0;
+        }
+
+        .trust-banner {
+            text-align: center;
+            padding: 40px 0;
+            border-top: 1px solid #222;
+            border-bottom: 1px solid #222;
+            margin: 40px 0;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px 0;
+            color: var(--text-muted);
+            font-size: 0.85rem;
+        }
+
+        footer a {
+            color: var(--text-muted);
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        footer a:hover {
+            color: var(--azure-blue);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <div class="logo">Skygrid <span>Networks</span></div>
+            <div style="font-size: 0.9rem; color: #888;">EU-Registered Estonia OÜ</div>
+        </header>
+
+        <section class="hero">
+            <h1>Your Network.<br><span>Audited. Secured.</span></h1>
+            <p>Cloud network engineering and Zero-Trust architecture for European SaaS companies. Read-only access, always. Fixed-price engagements.</p>
+            <a href="mailto:yavuz@skygridnetworks.com" class="btn">Contact for Audit</a>
+            <a href="#" class="btn btn-outline">Download Service Offering (PDF)</a>
+        </section>
+
+        <div class="trust-banner">
+            Trusted by European SaaS CTOs & Read by Formula 1 Engineers
+        </div>
+
+        <section class="features">
+            <div class="feature-card">
+                <h3>Azure Zero-Trust Network Audit</h3>
+                <p>Identify and eliminate critical network vulnerabilities before they are exploited. Prevent lateral movement and protect your core IP.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Cloud FinOps & Cost Optimization</h3>
+                <p>Most tech companies overpay Microsoft by 30-40%. We identify unattached resources and oversized instances to stop the cash burn.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Azure Compliance Readiness</h3>
+                <p>Map your environment against strict industry standards (ISO 27001, SOC 2, GDPR) to unblock enterprise sales cycles.</p>
+            </div>
+        </section>
+
+        <footer>
+            <p>Yavuz Yıldız - Zero-Trust Cloud Architect & Fractional CISO</p>
+            <div>
+                <a href="https://linkedin.com/in/yavuzyildizyz" target="_blank">LinkedIn</a>
+                <a href="#">The Detective Newsletter</a>
+            </div>
+            <p style="margin-top: 20px;">&copy; 2026 Skygrid Networks Estonia OÜ. All rights reserved.</p>
+        </footer>
+    </div>
+
+</body>
+</html>
